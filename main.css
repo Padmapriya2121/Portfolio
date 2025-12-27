@@ -1,0 +1,257 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Wrapper ===== */
+#wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* ===== Header ===== */
+#header {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    position: relative;
+}
+
+#header h1 {
+    font-size: 2.5rem;
+}
+
+#header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* ===== Dark Mode Toggle Button ===== */
+#darkModeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: #fff;
+    color: #4e54c8;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#darkModeToggle:hover {
+    background: #f0f0f0;
+}
+
+/* ===== Nav ===== */
+#nav {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#nav a:hover {
+    color: #4e54c8;
+    transform: scale(1.1);
+}
+
+/* ===== Main Sections ===== */
+.main {
+    padding: 3rem 1.5rem;
+    background: #fff;
+    margin: 2rem 0;
+    border-radius: 12px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.special {
+    text-align: center;
+}
+
+/* ===== Headings ===== */
+.major h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4e54c8;
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== Paragraphs ===== */
+.main p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1rem;
+}
+
+/* ===== Projects ===== */
+.project {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 800px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project h3 {
+    color: #4e54c8;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    background: #4e54c8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.project a:hover {
+    background: #3b3fc1;
+}
+
+.project a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.project a:hover::after {
+    width: 100%;
+}
+
+.project:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* ===== Contact Links ===== */
+#contact a {
+    color: #4e54c8;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Smooth Scroll ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== Dark Mode ===== */
+body.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode #header {
+    background: linear-gradient(135deg, #1f1f1f, #4e54c8);
+    color: #fff;
+}
+
+body.dark-mode #nav {
+    background: #1f1f1f;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.1);
+}
+
+body.dark-mode #nav a {
+    color: #e0e0e0;
+}
+
+body.dark-mode #nav a:hover {
+    color: #8f94fb;
+}
+
+body.dark-mode .main {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .project {
+    background: #2a2a2a;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .project a {
+    background: #8f94fb;
+    color: #121212;
+}
+
+body.dark-mode .project a:hover {
+    background: #6f74e0;
+}
+
+body.dark-mode #contact a {
+    color: #8f94fb;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    #header h1 {
+        font-size: 2rem;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+ 
