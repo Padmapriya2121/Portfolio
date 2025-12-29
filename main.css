@@ -1,0 +1,238 @@
+/* ==========================
+   Body & Global
+=========================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==========================
+   Header
+=========================== */
+.header {
+    background: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+/* ==========================
+   Navigation
+=========================== */
+.nav {
+    background: #1e272e;
+    padding: 12px 0;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+    background: #0a3d62;
+    color: #fff;
+}
+
+/* ==========================
+   Sections
+=========================== */
+.section {
+    padding: 50px 30px;
+    background: white;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.section.gray {
+    background: #eaeaea;
+}
+
+/* Center all section headings */
+.section h2 {
+    color: #0a3d62;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0a3d62;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* ==========================
+   Projects heading center only
+=========================== */
+#projects h2 {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* ==========================
+   Project Cards
+=========================== */
+.project {
+    background-color: #ffffff;
+    border-left: 5px solid #0a3d62;
+    padding: 20px 25px;
+    margin: 25px auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 800px; /* Center the card */
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project h3 {
+    color: #0a3d62;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.project p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.project a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.project a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* ==========================
+   Center Skills, Certifications, Experience, Contact
+=========================== */
+#skills, 
+#certifications, 
+#experience, 
+#contact {
+    text-align: center;
+}
+
+#skills ul,
+#certifications ul,
+#experience ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#contact a {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+/* ==========================
+   Footer
+=========================== */
+.footer {
+    background: #1e272e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95em;
+    border-top: 2px solid #0a3d62;
+}
+
+/* ==========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+    .nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 30px 20px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    .project h3 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.95em;
+    }
+
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .header p {
+        font-size: 0.95em;
+    }
+}
+body {
+    background-color: peachpuff;
+}
+/* ---- Layout Fix for GitHub Pages ---- */
+
+header,
+nav,
+section,
+footer {
+    width: 100%;
+}
+
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header,
+nav {
+    max-width: 100%;
+}
